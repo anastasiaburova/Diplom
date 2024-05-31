@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+    <style>
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+            color: #fff;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+    </style>
+
+    <h1>
+        {% if is_doctor %}
+            Карточка пациента {{ patient.name }}
+        {% else %}
+            Добро пожаловать, {{ patient.name }}!
+        {% endif %}
+    </h1>
+    <h2>Личные данные:</h2>
+    <p>Давление: {{ patient.blood_pressure }}</p>
+    <p>Рост: {{ patient.height }}</p>
+    <p>Вес: {{ patient.weight }}</p>
+    <p>Возраст: {{ patient.age }}</p>
+    <p>Жалобы: {{ patient.complaints }}</p>
+
+    {% if not is_doctor %}
+    <a href="/edit_patient/{{ patient.name }}" class="btn btn-primary">Редактировать</a>
+    {% endif %}
+
+    {% if patient.appointments or patient.test_results or patient.operations %}
+    <a href="{{ url_for('patient_appointments', username=patient.name) }}" class="btn btn-primary">Результаты осмотра</a>
+    {% else %}
+    <a href="#" class="btn btn-danger disabled" title="Нет результатов осмотра">Результаты осмотра</a>
+    {% endif %}
+{% endblock %}

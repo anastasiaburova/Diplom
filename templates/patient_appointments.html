@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Результаты осмотра для {{ patient.name }}</h1>
+
+    <h2>Назначения</h2>
+    <ul>
+        {% for appointment in patient.appointments %}
+        <li>{{ appointment }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Результаты анализов</h2>
+    <ul>
+        {% for result in patient.test_results %}
+        <li>{{ result }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Операции</h2>
+    <ul>
+        {% for operation in patient.operations %}
+        <li>{{ operation }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -16,7 +16,7 @@
 <li> Numpy
 <li> Pyomo
 
-### [Использование](https://github.com/username/repository#использование)
+### Использование
 
 Для запуска эвристического алгоритма скачайте и запустите блокнот algoritm.ipynb
 

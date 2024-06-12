@@ -8,7 +8,7 @@
 
 <li> Использование(https://github.com/username/repository#использование)
 
-### Технологии
+## Технологии
 
 <li> Python
 <li> Flask

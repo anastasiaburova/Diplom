@@ -4,11 +4,12 @@
 
 ## Содержание
 
-<li>  [Технологии](https://github.com/username/repository#технологии)
+<li>  Технологии(https://github.com/username/repository#технологии)
 
-<li> [Использование](https://github.com/username/repository#использование)
+<li> Использование(https://github.com/username/repository#использование)
 
 ### Технологии
+
 <li> Python
 <li> Flask
 <li> Pandas

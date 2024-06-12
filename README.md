@@ -7,7 +7,7 @@
 ### [Технологии](https://github.com/username/repository#технологии)
 
 ### [Использование](https://github.com/username/repository#использование)
-Python
+#Python
 Flask
 Pandas
 Numpy

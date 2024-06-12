@@ -8,10 +8,10 @@
 
 ### [Использование](https://github.com/username/repository#использование)
 <li> Python
-Flask
-Pandas
-Numpy
-Pyomo
+<li> Flask
+<li> Pandas
+<li> Numpy
+<li> Pyomo
 Использование
 Для запуска эвристического алгоритма скачайте и запустите блокнот algoritm.ipynb
 
